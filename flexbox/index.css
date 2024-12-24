@@ -1,0 +1,324 @@
+body {
+    background-color: #222222;
+}
+/*                              PARTE 1 NAVBAR*/
+nav{    
+    display: flex;    
+    justify-content: center;
+    margin-top: 40px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    font-family: monospace;
+    display: flex;
+}
+nav ul li{ 
+    text-align: center;
+    padding: 14px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /* elimina el subrayado*/ 
+}
+nav ul li a:hover{
+    color: #e57059;
+}
+#cuadradoIzquierda{
+    background-color: #e57059;
+    margin-right: 200px;
+    width: 60px;
+    height: 60px;
+}
+#cuadradoIzquierda .H{
+    color: white;
+    padding-left: 15px;
+    font-size: 36px;
+    margin: 0;
+    padding-top: 8px;
+    font-family: sans-serif;
+}
+#buscadorDerecha{
+    margin-left: 200px;
+    background-color:#222222; 
+    display: flex;
+    align-items: center;   
+}
+.lupa{
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+.lupa:hover{
+    cursor: pointer;
+    transform: rotate(25deg);
+}
+#menúDerecha{    
+    background-color: #e57059;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+ }
+.menu{
+    filter: invert(1);
+    width: 15px;
+    height: 25px;
+    padding: 6px;    
+}
+/*                              PARTE 2 DIV ABAJO*/
+#abajo {
+    width: 100%;
+    height: 25%;
+    background-color: #1f1f1f;
+    display: flex;
+}
+
+/*                                         Lado Derecho*/
+#LadoDerecho {    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    padding-left: 50px;
+    padding-right: 300px;
+    padding-top: 70px;
+    color: white;
+    width: 100%;
+}
+#LadoDerecho h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.parte2{
+    margin: 0;
+}
+#parte3{
+    display: flex;
+    color: #e57059;
+    margin-top: 50px;
+}
+.SinMargen{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+/*                                          Lado Izquierdo*/
+#LadoIzquierdo {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding-left: 350px;
+    padding-right: 50px;
+    width: 100%;
+}
+#LadoIzquierdo h3 {
+    color: #e57059;
+}
+#LadoIzquierdo  h2{
+    color: white;
+}
+#LadoIzquierdo  p{
+    color: white;
+}
+.experiencia{
+    display: flex;
+}
+.años{
+    color: #e57059;
+    font-size: 70px;
+}
+.experiencia1{
+    color: white;
+    margin: 0;
+    padding-top: 12px;
+}
+.experiencia2{
+    color: white;
+    margin: 0;
+}
+
+/*                              PARTE 3 DIVS ARRIBA*/
+
+#bloque{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px ;
+}
+#letrasPequeñas{
+    display: flex;
+    padding-left: 150px;
+}
+pre{
+    display: flex;
+    align-items: end;
+    margin-bottom: 70px;    
+    font-family: sans-serif;
+    font-size: 10px;
+}
+#letrasPequeñas .colorLetra{
+    color: #e57059;
+    font-family: sans-serif;
+}
+.fotoPerfil{
+    width: 300px;
+}
+#arriba{
+    width: 20%;;
+    font-size: 12px;
+    font-family: system-ui;
+    padding-top: 120px; 
+    padding-right: 180px;   
+}
+#arriba h3{
+    color: #e57059;
+}
+#arriba h2{
+    color: white;
+}
+p{
+    color: white;
+}
+.telefono{
+    color: #e57059;
+    margin: 0;
+    font-size: 14px;
+}
+.email{
+    color: #e57059;
+    margin-top: 0px;
+    font-size: 14px;
+}
+#imagen{    
+    display: flex;
+    justify-content: center;
+    height: 400px;    
+    padding-left: 70px;
+}
+#imagen .letraGrande{
+    font-size: 45px;
+}
+#imagen h1{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 60px;
+    margin-right: 20px; 
+}
+#imagen h2{
+    color: white;
+    padding-left: 20%;
+    font-size: 60px;
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+    transform: translateY(10px);    
+}
+#jorge{
+    margin-left:20px;
+}
+#figuras{
+    width: 106%;
+    height: 44%;
+    position: relative;
+    /*background-color: #222222;*/
+}
+.triangulo{
+    width: 100px;
+    position: absolute;
+    right: 488px;
+    transform: rotate(25deg);
+    top: 30px;
+    color: #e57059;
+}
+.circulo{
+    width: 33px;
+    height: 30px;
+    position: absolute;
+    right: 523px;
+    top: 65px;
+}
+/*                                      PAGINA 2*/
+#pagina2Arriba{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui;    
+    color: white;  
+}
+#pagina2Arriba p{
+    color: #e57059;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+#pagina2Medio{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: system-ui;
+}
+#pagina2Medio h1{
+    font-size: 20px;
+    color: white;
+}
+#medioIzquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#medioIzquierda p{
+    width: 50%;
+    text-align: center;
+}
+#medioCentro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    justify-content: end;
+    font-size: 15px;
+}
+#medioCentro p{
+    width: 50%;
+    text-align: center;
+}
+#medioFondoCentro{
+    background-color:#e57059;
+    display: flex;
+    width: 320px;
+    height: 320px;
+}
+#medioDerecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#medioDerecha p{
+    width: 50%;
+    text-align: center;
+}
+.timon{
+    width: 100px;
+}
+.link{
+    width: 50px;
+}
+.gamingmanito{
+    width: 50px;
+}
+#pagina2Abajo ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-right: 50px;
+}
+#pagina2Abajo li{
+    padding: 10px;
+}
+#pagina2Abajo li:hover{
+    color: #e57059;
+    transform: scaleY(3);
+}

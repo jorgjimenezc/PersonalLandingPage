@@ -1,0 +1,105 @@
+1. Git vs. GitHub: ¿Cuál es la diferencia? (Partidas guardadas y la nube) 
+Imagina que estás jugando un videojuego. Git es como la función de "guardar partida" 
+integrada en el juego. Te permite guardar tu progreso en diferentes puntos. GitHub es como un 
+servicio de almacenamiento en la nube para esos archivos de guardado. Puedes subir tus 
+archivos de guardado a GitHub para no perderlos si tu computadora falla, y puedes 
+compartirlos con amigos. 
+● Git: El software en tu computadora que guarda el progreso de tu proyecto (como la función 
+de "guardar partida"). Vive en tu computadora. 
+● GitHub: Un sitio web donde almacenas copias de tus proyectos Git en línea (como un 
+almacenamiento en la nube para tus archivos de "guardado"). 
+Entonces, Git es la herramienta para guardar tu trabajo, y GitHub es un lugar para mantener 
+esas versiones guardadas seguras y compartirlas. Estaremos trabajando con repositories (o 
+"repos"), que son como carpetas de proyecto que Git rastrea. 
+2. ¿Está Git instalado? Comprobando e instalando en Windows 
+Veamos si Git ya está en tu computadora. Abre PowerShell (búscalo en la barra de búsqueda 
+de Windows). Piensa en PowerShell como una forma basada en texto para hablar con tu 
+computadora. 
+Busca PowerShell en tu computadora, se debe abrir una consola de comandos. Escribe el 
+siguiente comando y aprieta Enter. 
+git --version 
+Si ves un montón de números (como git version 2.39.0.windows.1), ¡felicidades! Git está 
+instalado. Si ves un mensaje de error, significa que necesitas instalarlo. 
+Para instalar Git, ve a https://git-scm.com/download/win. Descarga el instalador y ejecútalo. 
+Simplemente haz clic en "Siguiente" en la mayoría de las opciones; la configuración 
+predeterminada generalmente está bien. Una vez que termine, cierra y vuelve a abrir 
+PowerShell para que los cambios surtan efecto. Vuelve a ejecutar git --version para verificar. 
+3. Configurando tu proyecto: Local Git Repositories 
+Un repository (o "repo") es una carpeta especial que Git observa. Es donde Git realiza un 
+seguimiento de todos los cambios que realizas en tu proyecto. Un local repository está en tu 
+propia computadora. 
+Digamos que tu proyecto está en una carpeta llamada "C:/Repos/MiSitioWebIncreible/". Abre 
+PowerShell y usa el comando cd para ir a esa carpeta. Por ejemplo, si está en tu Escritorio: 
+cd C:/Repos/MiSitioWebIncreible 
+Si te encuentras en otro Disco (“D:”, “E:”, u otro), antes de utilizar el comando “cd” debes 
+primero navegar al Disco en el que se encuentra la ruta del proyecto. Por ejemplo, si el 
+proyecto está en el disco “E:”, escribe en powershell E:  y luego Enter. Ahora puedes usar “cd” 
+para navegar a la carpeta dentro del disco. 
+Ahora, para convertir esta carpeta en un Git repository, escribe: 
+git init 
+Esto crea una carpeta oculta llamada .git dentro de "MiSitioWebIncreible". Esta carpeta .git es 
+el cuartel general secreto de Git, donde almacena todo el historial e información de la versión. 
+Por lo general, no necesitarás interactuar con ella directamente. 
+4. Guardando cambios: Git Commits (Instantáneas del proyecto) 
+Cada vez que deseas guardar tu progreso, creas un commit. Un commit es como tomar una 
+foto de tu proyecto en ese momento. Piénsalo como un punto de guardado. Cada commit tiene 
+un mensaje que describe los cambios que realizaste. 
+5. Eligiendo qué guardar: Staging tus archivos 
+Antes de que puedas tomar una "foto" (hacer un commit), necesitas seleccionar lo que deseas 
+incluir en la foto. Esto se llama staging. 
+Para hacer staging de todos los archivos de tu proyecto, usa: 
+git add . 
+El punto (.) significa "todo en esta carpeta y todas las carpetas dentro de ella". 
+Si solo deseas hacer staging de archivos específicos, enuméralos: 
+git add index.html estilos.css script.js 
+Git tiene una funcionalidad para saber qué archivos han sido modificados desde el último 
+guardado (commit), y poder escoger cuáles de esos vas a seleccionar para staging. 
+git status 
+Los archivos que se encuentran dentro de staging van a estar debajo de lo que dice “Changes 
+to be commited”. Los archivos que han sido modificados, pero no están en staging aún, se 
+encuentran bajo la “Changes not staged for commit”. Es desde esa segunda lista de donde vas 
+a escoger los archivos usando git add src/index.html 
+6. Haciendo un punto de guardado: Creando un Commit 
+Ahora que has hecho staging de tus cambios, es hora de hacer un commit (tomar la foto). Usa 
+este comando: 
+git commit -m "Se agregó la estructura HTML básica y el estilo" -m significa "mensaje". Escribe una breve descripción de lo que cambiaste. ¡Los buenos 
+mensajes de commit son súper útiles más adelante! 
+Términos clave que hemos cubierto hasta ahora: 
+● Repository (Repo): Una carpeta rastreada por Git. 
+● Commit: Una instantánea guardada de tu proyecto. 
+7. Poniendo tu proyecto en línea: GitHub Remote Repositories 
+Un remote repository es una copia de tu proyecto que vive en un servidor (como en GitHub). 
+Esto te permite compartir tu trabajo, colaborar con otros y tener una copia de seguridad. 
+Ve a GitHub.com y crea un nuevo repository. Dale un nombre (como "MiSitioWebIncreible"). No 
+marques ninguna de las casillas para agregar un README ni nada más por ahora. 
+GitHub te dará un enlace que se ve así: 
+https://github.com/TuNombreDeUsuario/MiSitioWebIncreíble.git 
+Esta es la dirección de tu remote repository. En tu repositorio git local debes agregar esta 
+dirección y darle un nombre. A menudo usamos el nombre origin como un atajo para este 
+remote repository. 
+8. Conectando lo local y lo en línea: Enlazando a GitHub 
+Ahora, necesitas decirle a tu local Git repository dónde está el repository en línea (remote 
+repository). Usa este comando: 
+git remote add origin 
+https://github.com/TuNombreDeUsuario/MiSitioWebIncreíble.git 
+origin es solo un nombre común para el remote repository. Es como un apodo. 
+¡Este paso es esencial! Es como decirle a tu "partida guardada" local dónde subir sus archivos 
+en la nube. 
+9. Subiendo tu trabajo: Pushing hacia GitHub 
+Pushing significa subir tus commits locales al remote repository en GitHub. Estaremos haciendo 
+pushing a la branch master. Piensa en las branches como líneas de tiempo paralelas para tu 
+proyecto. El branch master es la línea principal. Si quieres probar algo nuevo sin afectar la 
+versión principal, creas una nueva branch. Una vez que terminas, puedes merge (fusionar) los 
+cambios de la nueva branch al branch master. En resumen, las branches te permiten trabajar 
+en diferentes cosas a la vez de forma organizada. 
+Para hacer push de tu trabajo a la branch master en GitHub, usa este comando: 
+git push origin master 
+Es posible que debas ingresar tu nombre de usuario y contraseña de GitHub. 
+Si todo funciona, verás un mensaje de éxito en PowerShell. ¡También puedes ir a tu repository 
+en GitHub en tu navegador web y ver tus archivos allí! 
+Aquí están los términos clave restantes: 
+● Remote/Origin: La copia en línea de tu proyecto en GitHub. 
+● Push: Subir tus commits locales a GitHub. 
+● Branch: Una versión paralela de tu proyecto (usamos master). 
+● Merge: Combinar cambios de diferentes branches (aprenderemos esto más adelante). 
+Recuerda practicar estos pasos, ¡y Git se volverá mucho más claro!

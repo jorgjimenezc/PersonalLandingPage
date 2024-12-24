@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+}
+.wallpaper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#fondo1{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 20% 17% 17% 10% 16% 20%;
+    grid-template-columns: 70%;
+    justify-content: center;
+    width: 28%;
+    height: 100%;
+    position: absolute;
+    left: 36%;
+}
+#fondo1 h1{
+    text-align: center;  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5%;
+}
+form p{
+    font-family: system-ui;
+}
+form input{
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid black;    
+}
+#usuario{
+    padding-left: 10%;
+    background-image: url('imagenes/icons8-usuario-96.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-bottom: 4%;
+}
+#password{    
+    padding-left: 10%;
+    background-image: url('imagenes/icons8-bloquear-64.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-bottom: 4%;
+    opacity: 0.7
+}
+#Loggin{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    height: 35%;   
+    background: linear-gradient(to right, #d13bf4, 
+    #b735da, #7971e6, #709ee5);    
+}
+#Loggin:hover{
+    cursor: pointer;
+}
+#Loggin:active{
+    transform: scale(0.95); /* Reduce ligeramente el tamaño del botón */    
+}
+#Loggin p{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#SignUp p{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#acciones{
+    margin-top: 65%;
+}
+#acciones h2{
+    font-size: 74%;
+    text-align: center;
+}
+#redes{
+    text-align: center;
+    padding-top: 15%;
+}
+#redes img{
+    width: 10%;
+}
+#SignUpInstead{
+    border: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 32%;
+    font-size: 90%;
+}
+#SignUpInstead:hover{    
+    color:blueviolet;
+    cursor: pointer;
+}
+#LoginInstead{
+    border: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 32%;
+    margin-top: 9%;
+    font-size: 90%;
+}
+#LoginInstead:hover{    
+    color:blueviolet;
+    cursor: pointer;
+}
+#formAction{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    height: 35%;   
+    background: linear-gradient(to right, #d13bf4, 
+    #b735da, #7971e6, #709ee5);
+}
+#formAction p{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/*------------------------SignUp---------------------------------*/
+.hiddenSignup{
+    display: none;
+}
+/*----------------------- FOOTER --------------------------------*/
+.hidden {
+    display: none;
+}
+.error{
+    color: red;}
+
+/*-----------------------RESPONSUVE CELULARES--------------------*/
+@media screen and ( max-width: 435px) {
+    #fondo1 {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 20% 17% 17% 10% 16% 20%;
+        grid-template-columns: 70%;
+        justify-content: center;
+        width: 100%;
+        height: 53%;
+        /* position: absolute; */
+        left: 0%;
+        margin-top: 20%;
+    }
+    #fondo1 h1 {
+        /* align-content: center; */
+        font-size: 40px;
+    }
+    #acciones {
+        margin-top: 62%;
+    }
+    #SignUpInstead {
+        border: none;
+        background-color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 32%;
+        font-size: 90%;
+    }
+    #LoginInstead {
+        border: none;
+        background-color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 32%;
+        margin-top: 3%;
+        font-size: 90%;
+    }
+    #redes {
+        padding-top: 5%;
+    }
+}
+/*-------------------------TABLETS-----------------------------*/
+@media screen and (min-width:750px) and (max-width:1028px) {
+    #fondo1 {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 20% 17% 17% 10% 16% 20%;
+        grid-template-columns: 70%;
+        justify-content: center;
+        width: 69%;
+        height: 55%;
+        position: absolute;
+        left: 15%;
+        margin-top: 17%;
+    }
+    #fondo1 h1 {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 67px;
+        align-content: center;
+    }
+    #acciones {
+        margin-top: 45%;
+    }
+    #SignUpInstead {
+        border: none;
+        background-color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 35%;
+        font-size: 140%;
+    }
+    #LoginInstead {
+        border: none;
+        background-color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 35%;
+        margin-top: 3%;
+        font-size: 140%;
+    }
+    #redes {
+        text-align: center;
+        padding-top: 3%;
+    }
+}
+/*--------------------------LAPTOS---------------------------------*/
+@media screen and (min-width:1030px) and (max-width:1283px) {
+    .wallpaper {
+        height: 130%;
+    }
+    #fondo1 h1 {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 58px;
+        align-content: center;
+    }
+    #fondo1 {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 20% 17% 17% 10% 16% 20%;
+        grid-template-columns: 70%;
+        justify-content: center;
+        width: 69%;
+        height: 76%;
+        position: absolute;
+        left: 15%;
+        margin-top: 12%;
+    }
+    form p {
+        font-family: system-ui;
+        font-size: 20px;
+    }
+    #usuario {
+        font-size: 20px;
+    }
+    #password {
+        font-size: 20px;
+    }
+    #acciones {
+        margin-top: 34%;
+    }
+    #cambios{
+        display: flex;
+    }
+    #SignUpInstead {
+        border: none;
+        background-color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 17%;
+        font-size: 120%;
+        margin-top: 6%;
+    }
+    #LoginInstead {
+        border: none;
+        background-color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 17%;
+        margin-top: 6%;
+        font-size: 120%;
+    }
+    #redes {
+        text-align: center;
+        padding-top: 3%;
+    }
+    #redes img {
+        width: 7%;
+    }
+}

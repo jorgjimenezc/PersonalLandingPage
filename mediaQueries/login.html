@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta http-equiv="refresh" content="3"-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Jorge Dev</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <main>
+      <img src="imagenes/codalg4n.png" alt="fondo" class="wallpaper">      
+      <div id="fondo1">
+        <h1 id="cambiarLogin"> Login </h1>
+        <form>
+          <p>Username</p>            
+            <input id="usuario" type="text" name="usuario" value="Coco" placeholder="Type your username">
+            <p>Password</p>
+            <input id="password" type="password" name= "password" value="1234" placeholder="Type your password">
+            <br>
+            <br>
+            <br>
+            <button id="Loggin" type="button"  onclick="login()"><p>LOGIN💪</p></button>
+            <div id="error-message" class="hidden error">
+              ¡Usuario o contraseña incorrectos!
+            </div>            
+            <button id="SignUp" type="button" class="hiddenSignup" onclick="signUp()"><p>Sign up💪</p></button>                  
+            <button id="formAction" type="button" class="hiddenSignup" onclick=executeAction()><p>LOGIN💪</p></button>
+        </form>   
+        <div id="acciones">
+          <div id="cambios">
+            <button id="SignUpInstead" onclick="changeToSignUp()">Sign up Instead</button>          
+            </br>
+            <button id="LoginInstead"  onclick="changeToLogin()">Login in Instead</button>
+          </div>
+          <div id="redes">
+            <img src="imagenes/facebook (1).png" alt="face" class="facebook">
+            <img src="imagenes/google-plus.png" alt="google" class="heygoogle">
+            <img src="imagenes/whatsapp.png" alt="whatssap" class="whatsp">
+            <img src="imagenes/twitter.png" alt="twitter" class="tuit">
+          </div>                                  
+        </div>
+      </div>
+    </main>     
+    <script type="text/javascript" src="landingpage.js"></script>
+  </body>
+</html>

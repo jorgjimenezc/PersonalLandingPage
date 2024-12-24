@@ -1,0 +1,310 @@
+/*                                        PARTE 1 CUERPO*/
+body{
+    background-color: #222222;
+    position: relative;
+}
+
+/***************************************************************/
+/*                                        PARTE 1.2 DIV GENERAL (esta por verse)*
+#divGeneral{
+    background-color:#e57059;
+    position: relative;
+    height: 1200px;
+}
+#divInterno{
+    width: auto;
+    height: 1000px;
+    display: inline-block;
+    /* font-size: 70%; *
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: 150px;
+    bottom: 150px;
+}/
+/**************************************************************/
+/*                                        PARTE 2 NAVBAR*/
+nav{    
+    display: flex;    
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    font-family: monospace;
+}
+
+nav ul li{
+    text-align: center;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none; /* elimina el subrayado*/ 
+}
+
+nav ul li a:hover{
+    color: #e57059;
+}
+#cuadradoIzquierda{
+    background-color: #e57059;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 230px;
+    top: 10px;
+}
+#cuadradoIzquierda .H{
+    color: white;
+    padding-left: 15px;
+    font-size: 36px;
+    margin: 0;
+    padding-top: 8px;
+    font-family: sans-serif;
+}
+#buscadorDerecha{
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 210px;
+    background-color:#222222;
+    top: 20px;
+}
+.lupa{
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+.lupa:hover{
+    cursor: pointer;
+    transform: rotate(25deg);
+}
+#menúDerecha{
+   width: 35px;
+   height: 35px;
+   position: absolute;
+   right: 175px;
+   top: 22px;
+   background-color: #e57059;
+}
+.menu{
+    filter: invert(1);
+    width: 15px;
+    height: 25px;
+    padding-top: 4px;
+    padding-left: 10px;
+}
+/*                                         PARTE 3 COLOR*/
+p{
+    color : white;
+}
+/*                                          LETRAS PEQUEÑAS*/
+
+#letrasPequeñas{
+    background-color:#222222;
+    width: auto;
+    padding-top: 330px;
+    margin-left: 130px;
+    font-size: 10px;
+    color: white;
+}
+#letrasPequeñas .colorLetra{
+    color: #e57059;
+    font-family: sans-serif;
+}
+pre{
+    font-family: sans-serif;
+}
+/*                                         IMAGENES PEQUEÑAS*/
+
+#figuras{
+    width: 106%;
+    height: 44%;
+    position: relative;
+    /*background-color: #222222;*/
+}
+.triangulo{
+    width: 100px;
+    position: absolute;
+    right: 395px;
+    transform: rotate(25deg);
+    top: 30px;
+    color: #e57059;
+}
+.circulo{
+    width: 33px;
+    height: 30px;
+    position: absolute;
+    right: 435px;
+    top: 65px;
+}
+/*                                         PARTE 4.5 DIV ARRIBA IZQUIERDA*/
+
+#imagen{
+    background-color: #222222;
+    width: 36%;
+    height: 400px;
+    display: inline-block;
+    position: absolute;
+    left: 400px;
+}
+#imagen .letraGrande{
+    font-size: 45px;
+}
+#imagen h2{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 78px;
+    width: 300px;
+    transform: translateY(10px);
+    position: absolute;
+    right: 250px;
+}
+#imagen h1{
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 60px;
+    width: 300px  ;
+    position: absolute;
+    right: 250px;
+    top: 90px;
+}
+.fotoPerfil{
+    height: 106%;
+    width: 55%;
+    position: absolute;
+    left: 220px;
+    top: 0px;
+}
+#arriba{
+    background-color:#222222;    
+    width: 250px;
+    height: auto;
+    margin-right: 170px;
+    padding-top: 110px;
+    float: right;
+    font-size: 11px;
+    font-family: system-ui;
+}
+#arriba h3{
+    color: #e57059;
+}
+#arriba h2{
+    color: white;
+}
+.telefono{
+    color: #e57059;
+    margin: 0;
+    font-size: 14px;
+}
+.email{
+    color: #e57059;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+
+/*                                       PARTE 4 DIV*/
+div{  
+    background-color: #1f1f1f;
+    width: 100%; /* ocupa todo el ancho posible*/
+    height: 425px;/* el 50% de la altura posible*/    
+    box-sizing: border-box;/* el tamaño total incluye el borde*/
+    /*padding: 20px; /* espacio dentro del contenedor*/
+    display: inline-block;   
+    font-family: system-ui;
+    font-size: 11px; 
+}
+/*                                          PARTE 5 DIV IZQUIERDA*/
+#LadoIzquierdo{
+    color: green;
+    width: 50%;
+    float:left;
+    padding-left: 300px;
+    font-size: 10px;
+}
+#LadoIzquierdo h3{
+    color: #e57059;
+    margin-top: 50px;
+}
+#LadoIzquierdo h2{
+    color: white;
+}
+#LadoIzquierdo p{
+    color: white;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+#LadoIzquierdo .experiencia{    
+    height: 100px;
+    width: 250px;   
+    padding: 0px;
+}
+#LadoIzquierdo .años{ /* aca el 7 lo queria subir mas en el div pero no pude, creo que fue lo unico que no encontré*/
+    color: #e57059;
+    display: inline-block;    
+    font-size: 50px;    
+    height: 60px;
+    width: 30px;
+}
+
+#LadoIzquierdo .texto-exp{
+    color: white;           
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    font-size: 12px;
+    
+}
+
+#LadoIzquierdo .experiencia1{
+    margin:0;
+    padding-top: 20px;
+}
+#LadoIzquierdo .experiencia2{
+    margin:0;
+    padding-top: 0px;
+}
+/*                                          PARTE 6 DIV DERECHA*/
+#LadoDerecho{
+    color: #e57059;
+    width: 50%;    
+    float: right;
+    padding-left: 100px;
+    font-size: 14px;
+}
+
+#LadoDerecho h1{
+    margin-top: 70px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+#LadoDerecho p{
+    margin-top: 15px;
+    color: white;
+}
+
+#LadoDerecho h2{
+    margin-top: 66px;
+    display: inline-block;
+    text-decoration: underline;
+    height: 40px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+#LadoDerecho .SinMargen{    
+    margin-top: 0px;    
+    margin-left: 40px;
+    display: inline-block;
+    color: #e57059;
+    text-decoration: underline;    
+}
+#LadoDerecho .parte2{
+    margin: 0;
+}
